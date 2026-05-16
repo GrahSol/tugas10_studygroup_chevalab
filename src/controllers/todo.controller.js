@@ -105,9 +105,10 @@ function remove(req, res) {
     });
   }
 
-  res.status(204).send();
+  res.json({
+    message: "deleted success"
+  });
 }
-
 module.exports = {
   getAll,
   getOne,
